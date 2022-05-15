@@ -4,7 +4,7 @@ Biorobotcis_AI_Study
 
 ## Convolutional Neural Networks(CNNs)
 
-Folder_split.py
-CNN_training.py
+Folder_split.py/n
+CNN_training.py/n
 Evaluation.py
 
