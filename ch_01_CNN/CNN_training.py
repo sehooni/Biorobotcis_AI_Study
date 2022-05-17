@@ -1,3 +1,4 @@
+import splitfolders
 from tensorflow.keras.layers import Conv2D,Flatten,Dense,MaxPool2D,BatchNormalization,GlobalAveragePooling2D
 from tensorflow.keras.applications.resnet50 import preprocess_input, decode_predictions
 from tensorflow.keras.preprocessing.image import ImageDataGenerator,load_img
@@ -5,6 +6,7 @@ from tensorflow.keras.applications.resnet50 import ResNet50
 from tensorflow.keras.preprocessing import image
 from tensorflow.keras.models import Sequential
 from tensorflow.keras.models import Modelsplitfolders
+from tensorflow.keras.models import Model
 import matplotlib.pyplot as plt
 import numpy as np
 

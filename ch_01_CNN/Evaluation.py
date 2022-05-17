@@ -14,7 +14,7 @@ import os
 
 model_1 = load_model('Saved_model/ResNET50_Flow.h5')
 
-img = image.load_img('123123.jpg',target_size=(244,244))
+img = image.load_img('test_files/111.jpg', target_size=(244, 244))
 plt.imshow(img)
 x=image.img_to_array(img)
 x=np.expand_dims(x, axis=0)
