@@ -14,6 +14,8 @@ from numpy.testing import assert_allclose
 
 def forest_detection_model(test_img):
 
+    filename = str(test_img)    
+    
     SIZE_X = 256 
     SIZE_Y = 256
     IMG_CHANNELS = 3
@@ -39,7 +41,7 @@ def forest_detection_model(test_img):
     plt.figure(figsize=(12, 8))
     plt.imshow(predicted_img, cmap='jet')
     plt.axis("off")
-    plt.savefig('forest_type.png', dpi=960)
+    plt.savefig(filename +'_forest_type.png', dpi=960)
     unique, counts = np.unique(predicted_img, return_counts=True)
 
     return predicted_img, unique, counts
